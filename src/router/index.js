@@ -10,16 +10,20 @@ import Follow from '../views/Follow.vue'
 import Hot from '../views/Hot.vue'
 import QuestionWaiting from '../views/QuestionWaiting.vue'
 import Login from '../views/Login.vue'
+import Fvorite from '../views/Favorite.vue'
+import Columns from '../views/Columns.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
+
   {
     path: '/',
     component: Nav,
 	children:[{
 		path:'/',
-		redirect: 'home'
+		redirect: 'home',
+		linkActiveClass:' open active',
 	},
 	{
 		path:'home',
@@ -41,6 +45,9 @@ const routes = [
 				path:'hot',
 				component:() => import('../views/Hot.vue')
 			}
+		
+			
+
 		]
 	},
 	{
@@ -56,6 +63,15 @@ const routes = [
 		component:() => import('../views/RoundTable.vue')
 	},
 	{
+		  
+		path:'columns/all',
+		component:Columns
+	},
+	{
+		path:'favorite/all',
+		component:() => import('../views/Favorite.vue')
+	},
+	{
 		path:'question/waiting',
 		component:() => import('../views/QuestionWaiting.vue')
 	}
@@ -65,10 +81,12 @@ const routes = [
   	path:'/login',
   	component:Login
   }
+  
 ]
 
 const router = new VueRouter({
   routes
 })
+
 
 export default router

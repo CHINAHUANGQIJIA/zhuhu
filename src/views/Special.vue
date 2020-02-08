@@ -29,7 +29,7 @@
 						</div>
 					</div> 
 			</div>
-			<button @click="show_all" class="flex center btn_gz">展开全部>>></button>
+			<button @click="show_all" class="flex center l">展开全部>>></button>
 		</div>
 		<div><a href="#top" style="position: fixed; bottom: 5%; right: 5%;"><i class="iconfont">&#xe633;</i></a></div>
 	</div>

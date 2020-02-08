@@ -22,7 +22,7 @@
 					</div>
 				</div>
 			</div>
-			<button @click="show_all" class="flex center btn_gz">展开全部>>></button>
+			<button @click="show_all" class="flex center l">展开全部>>></button>
 		</div>
 		<div><a href="#top" style="position: fixed; bottom: 5%; right: 5%;"><i class="iconfont" style="font-size: 30px;color: #0084FF;">&#xe633;</i></a></div>
 	</div>
@@ -59,7 +59,7 @@
 	}
 
 	.row {
-		width: 93%;
+		width: 100%;
 		margin: auto;
 		margin-top: 10px;
 		background-color: white;

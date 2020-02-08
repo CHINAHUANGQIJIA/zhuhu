@@ -1,6 +1,11 @@
 
 .container{
-		width: 70%;
+	
+	    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+	
+	
+
+		 width: 1000px;
 		margin: auto;
 	}
 
@@ -11,12 +16,12 @@
 		text-decoration: none;
 	}	
 	.nav-bar {
-		width: 84%;
+		width: 1000px;
 		margin: auto;
-		height: 50px;
+		height: 52px;
 	}
 	.nav-list {
-		width: 80%;
+		width: 1078px;
 		margin: 0 auto;
 		display: flex;
 		align-items: center;
@@ -95,7 +100,10 @@
 	}
 	
 	.col-6 {
-		flex: 0 0 50%;
+		flex: 0 0 48%;
+	}
+	.col-62 {
+		flex: 0 0 22.9%;
 	}
 	
 	.col-4 {
