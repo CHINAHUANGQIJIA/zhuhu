@@ -14,6 +14,12 @@ var sportList = require('./src/data/sport.json')
 var carList = require('./src/data/car.json')
 var fashionList = require('./src/data/fashion.json')
 var schoolList = require('./src/data/school.json')
+var popularityList = require('./src/data/popularity.json')
+var potentialList = require('./src/data/potential.json')
+var newProblemList = require('./src/data/newProblem.json')
+var everyoneList = require('./src/data/everyone.json')
+var areaList = require('./src/data/DXYArea.json')
+
 //API路径
 var apiRoutes = express.Router()
 app.use('/api', apiRoutes)
@@ -96,6 +102,69 @@ module.exports = {
 					data: schoolList
 				})
 			})
+			app.get('/api/question-wait/popularity',(req,res)=>{
+			
+							res.json({
+			
+								code:1,
+			
+								msg:'成功',
+			
+								data:popularityList
+			
+							})
+			
+						})
+			
+						app.get('/api/question-wait/potential',(req,res)=>{
+			
+							res.json({
+			
+								code:1,
+			
+								msg:'成功',
+			
+								data:potentialList
+			
+							})
+			
+						})
+			
+						app.get('/api/question-wait/newProblem',(req,res)=>{
+			
+							res.json({
+			
+								code:1,
+			
+								msg:'成功',
+			
+								data:newProblemList
+			
+							})
+			
+						})
+			
+						app.get('/api/question-wait/everyone',(req,res)=>{
+			
+							res.json({
+			
+								code:1,
+			
+								msg:'成功',
+			
+								data:everyoneList
+			
+							})
+			
+						})
+						 app.get('/api/area', (req, res) => {
+						        res.json({
+						          code: 1,
+						          msg: '成功',
+						          data: areaList
+						        })
+						      })
 		}
+		
 	}
 };

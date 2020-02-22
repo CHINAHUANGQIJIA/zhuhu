@@ -44,7 +44,8 @@ const routes = [
 			{
 				path:'hot',
 				component:() => import('../views/Hot.vue')
-			}
+			},
+			
 		
 			
 
